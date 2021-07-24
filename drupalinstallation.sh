@@ -2,8 +2,8 @@
 
 sudo apt-get update -y
 sudo apt-get upgrade -y
-sudo apt-get install tasksel -y 
-sudo tasksel install lamp-server 
+DEBIAN_FRONTEND=noninteractive sudo apt-get install tasksel -y 
+DEBIAN_FRONTEND=noninteractive sudo tasksel install lamp-server 
 sudo mysql -u root -padmin -e "CREATE DATABASE drupal CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;"
 sudo mysql -u root -padmin -e "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES ON drupal.* TO ‘drupaluser’@’localhost’ IDENTIFIED BY 'root';"
 wget https://ftp.drupal.org/files/projects/drupal-8.6.2.tar.gz
