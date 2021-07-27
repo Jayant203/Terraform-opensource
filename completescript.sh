@@ -9,10 +9,6 @@ sudo tasksel install lamp-server
 sudo apt install php-dom php-gd php-xml 
 
 
-
-#echo "Enter input: "
-#read input
-
 if [ $input == "drupal" ]
 then
         if [ -f /etc/init.d/mysql* ]
@@ -47,7 +43,7 @@ else
 
         sudo a2enmod rewrite
         sudo systemctl restart apache2
-        sudo apt install zip
+        sudo apt install zip -y
        # sudo mkdir -p /var/www/html
        # sudo mkdir -p /var/www/wordpress
         curl --output /tmp/wordpress.zip https://wordpress.org/latest.zip
