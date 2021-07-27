@@ -50,7 +50,7 @@ else
        # sudo mkdir -p /var/www/wordpress
         curl --output /tmp/wordpress.zip https://wordpress.org/latest.zip
         sudo rm -fr /var/www/html
-        sudo unzip /tmp/wordpress.zip -d /var/www/
+        sudo unzip -o /tmp/wordpress.zip -d /var/www/
         sudo mv /var/www/wordpress/ /var/www/html
         sudo chown -R www-data.www-data /var/www/html
         sudo systemctl restart apache2
