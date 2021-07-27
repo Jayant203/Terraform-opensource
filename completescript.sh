@@ -6,7 +6,7 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install tasksel -y
 sudo tasksel install lamp-server
-sudo apt install php-dom php-gd php-xml 
+sudo apt install php-dom php-gd php-xml -y
 
 
 if [ $input == "drupal" ]
