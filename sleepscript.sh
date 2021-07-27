@@ -8,7 +8,7 @@ sudo apt-get update
 sleep 30
 sudo apt-get install tasksel -y
 sudo tasksel install lamp-server
-sudo apt install php-dom php-gd php-xml 
+sudo apt install php-dom php-gd php-xml -y
 
 
 #echo "Enter input: "
