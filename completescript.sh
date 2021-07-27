@@ -10,10 +10,10 @@ sudo apt install php-dom php-gd php-xml
 
 
 
-echo "Enter input: "
-read input
+#echo "Enter input: "
+#read input
 
-if [ $input -eq "drupal" ]
+if [ $input == "drupal" ]
 then
         if [ -f /etc/init.d/mysql* ]
         then
